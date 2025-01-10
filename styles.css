@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav header"
+    "nav main";
+  grid-template-rows: 150px 1fr;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.nav {
+  background-color: #2565c4;
+  grid-area: nav;
+  padding: 1rem;
+}
+
+.main {
+  grid-area: main;
+  background-color: #a5b2b8;
+  padding: 1rem;
+}
