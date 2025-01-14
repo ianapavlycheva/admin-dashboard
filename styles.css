@@ -34,6 +34,10 @@ body {
   padding: 1rem;
 }
 
+.flex-container {
+  display: flex;
+}
+
 .cards {
   display: grid;
   grid-gap: 2rem;
@@ -46,4 +50,10 @@ body {
   border-radius: 8px;
   padding: 3rem 2rem;
   border-left: 12px solid #e0ea26;
+}
+
+.announcements,
+.trending {
+  padding: 20px 30px;
+  max-width: 350px;
 }
