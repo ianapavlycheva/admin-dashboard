@@ -50,11 +50,12 @@
       <!-- Main Content Section -->
       
         <main class="main">
-                <h2>Your projects</h2>
+
           <div class="flex-container">
-    
           <!-- Card Section -->
-          <section class="cards">
+          <section class="cards-section">
+            <h2>Your projects</h2>
+            <div class="cards">
             <div class="card">
               <h3>Super Cool Project</h3>
               <p>
@@ -110,11 +111,14 @@
                 nihil est fugit enim. At, laboriosam ratione. Corrupti!
               </p>
             </div>
+            </div>
           </section>
           <div class="right-side">
-            <section class="announcements">
-              <h2>Announcements</h2>
-              <div class="">
+
+            <section class="announcements-section">
+
+            <h2 id="announcements-heading">Announcements</h2>
+              <div class="announcements">
                 <h4>Site Maintenance</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
@@ -122,6 +126,7 @@
                   temporibus minima, quia vel saepe! Laboriosam eveniet rerum
                   in, accusantium minima ea placeat eius!
                 </p>
+                <hr>
                 <h4>Community Share Day</h4>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -129,6 +134,7 @@
                   quasi asperiores quisquam quo ratione repudiandae non natus
                   dolor ducimus, provident exercitationem?
                 </p>
+                <hr>
                 <h4>Updated Privacy Policy</h4>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -139,24 +145,42 @@
               </div>
             </section>
 
-            <section class="trending">
-              <h2>Trending</h2>
-              <div>
-                <img src="profile-pic.jpg" alt="Profile Picture" />
-                <p>@tegan</p>
-                <p>World Piece Builder</p>
+            <section class="trending-section">
+                            <h2 id="trending-heading">Trending</h2>
+              <div class="trending">
 
-                <img src="profile-pic.jpg" alt="Profile Picture" />
-                <p>@morgan</p>
-                <p>World Piece Builder</p>
+                <div class="trending-item">
+                  <img src="./images/avatar_2.png" alt="Profile Picture" />
+                <div class="text">
+                  <p class="username">@tegan</p>
+                  <p class="project-name">World Piece Builder</p>
+                </div>
+                </div>
 
-                <img src="profile-pic.jpg" alt="Profile Picture" />
-                <p>@kendall</p>
-                <p>World Piece Builder</p>
+                <div class="trending-item">
+                  <img src="./images/avatar_1.png" alt="Profile Picture" />
+                <div class="text">
+                  <p class="username">@morgan</p>
+                  <p class="project-name">Super Cool Project</p>
+                </div>
+                </div>
 
-                <img src="profile-pic.jpg" alt="Profile Picture" />
-                <p>@alex</p>
-                <p>World Piece Builder</p>
+                <div class="trending-item">
+                  <img src="./images/avatar_3.png" alt="Profile Picture" />
+                 <div class="text">
+                  <p class="username">@kendall</p>
+                  <p class="project-name">Life Changing App</p>
+                </div>
+                </div>
+
+                <div class="trending-item">
+                  <img src="./images/avatar_4.png" alt="Profile Picture" />
+                 <div class="text">
+                    <p class="username">@alex</p>
+                    <p class="project-name">No Traffic Manager</p>
+                </div>
+                </div>
+
               </div>
             </section>
           </div>

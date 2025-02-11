@@ -52,8 +52,78 @@ body {
   border-left: 12px solid #e0ea26;
 }
 
+#announcements-heading {
+  font-weight: 600;
+  margin-left: 2rem;
+}
+
+.announcements {
+  padding: 3rem 2rem;
+}
+
+.announcements p {
+  color: #727272;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 0;
+}
+
+.announcements h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
 .announcements,
 .trending {
   padding: 20px 30px;
   max-width: 350px;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  margin: 0 0 3rem 2rem;
+}
+
+#trending-heading {
+  font-weight: 600;
+  margin-left: 2rem;
+}
+
+.trending-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.trending-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.trending-item .text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.username {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-name {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #727272;
+}
+
+.username,
+.project-name {
+  margin: 5px;
 }
