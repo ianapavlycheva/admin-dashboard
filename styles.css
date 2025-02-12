@@ -25,9 +25,52 @@ body {
 .nav {
   background-color: #2565c4;
   grid-area: nav;
-  padding: 1rem;
+  padding: 2rem;
 }
 
+.nav h1 {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  gap: 10px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.nav ul i {
+  margin-right: 14px;
+}
+
+.nav ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  line-height: 2;
+  margin-top: 40px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav a:hover {
+  color: #0d3770;
+}
+
+.nav a:visited {
+  color: #000000;
+}
+
+.nav a:active {
+  color: #0000ff;
+}
+
+#nav-settings {
+  margin-top: 50px;
+}
 .main {
   grid-area: main;
   background-color: #a5b2b8;
