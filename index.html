@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -12,18 +13,18 @@
       <!-- Header Section -->
       <header class="header">
         <div class="search-bar">
-          <img src="magnifying-glass.png" alt="Search" class="search-icon" />
+          <i class="mdi mdi-magnify"></i>
           <input type="text" aria-label="Search" />
         </div>
         <div class="profile">
-          <img src="alert.jpg" alt="Alert" />
-          <img src="profile-pic.jpg" alt="Profile Picture" />
-          <p>Username</p>
+          <i class="mdi mdi-bell-ring-outline"></i>
+          <img src="./images/avatar_1.png" alt="Profile Picture" />
+          <p>Morgan Oakley</p>
         </div>
         <div class="greeting">
-          <img src="profile-pic.jpg" alt="Profile Picture" />
+          <img src="./images/avatar_1.png" alt="Profile Picture" />
           <p>Hi there,</p>
-          <p>Username (@username)</p>
+          <p>Morgan Oakley (@morgan)</p>
         </div>
         <div>
           <button>New</button>
@@ -33,18 +34,19 @@
       </header>
       <!-- Sidebar Section -->
       <nav class="nav">
+        <i class="mdi mdi-view-dashboard"></i>
         <h1>Dashboard</h1>
         <ul>
-          <li><a href="">Home </a></li>
-          <li><a href="">Profile </a></li>
-          <li><a href="">Messages </a></li>
-          <li><a href="">History </a></li>
-          <li><a href="">Tasks </a></li>
-          <li><a href="">Community </a></li>
-          <li><a href="">Settings </a></li>
-          <li><a href="">Settings </a></li>
-          <li><a href="">Tasks </a></li>
-          <li><a href="">Privacy</a></li>
+          <li><i class="mdi mdi-home"></i><a href="">Home</a></li>
+          <li><i class="mdi mdi-card-account-details-outline"></i><a href="">Profile</a></li>
+          <li><i class="mdi mdi-message-reply"></i><a href="">Messages</a></li>
+          <li><i class="mdi mdi-clock-time-three"></i><a href="">History</a></li>
+          <li><i class="mdi mdi-dock-window"></i><a href="">Tasks</a></li>
+          <li><i class="mdi mdi-account-group"></i><a href="">Communities</a></li>
+          
+          <li><i class="mdi mdi-cog"></i><a href="">Settings</a></li>
+          <li><i class="mdi mdi-help-box"></i><a href="">Support</a></li>
+          <li><i class="mdi mdi-shield-check"></i><a href="">Privacy</a></li>
         </ul>
       </nav>
 
@@ -64,6 +66,11 @@
                 Expedita, harum asperiores. Consequatur veritatis voluptas ut
                 consequuntur excepturi id.
               </p>
+              <div class="project-icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-share-variant-outline"></i>
+              </div>
             </div>
             <div class="project">
               <h3>Less Cool Project</h3>
@@ -72,6 +79,11 @@
                 explicabo illo quibusdam iste ducimus soluta ullam, deleniti
                 mollitia architecto fugit natus perferendis.
               </p>
+                            <div class="project-icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-share-variant-outline"></i>
+              </div>
             </div>
             <div class="project">
               <h3>Impossible App</h3>
@@ -81,6 +93,11 @@
                 velit quod pariatur explicabo, itaque adipisci nam autem tempora
                 amet quas.
               </p>
+                            <div class="project-icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-share-variant-outline"></i>
+              </div>
             </div>
             <div class="project">
               <h3>Easy Peasy App</h3>
@@ -89,6 +106,11 @@
                 tempore repellendus earum, laborum voluptatum corrupti sapiente
                 iste odit illum. Obcaecati, hic.
               </p>
+                            <div class="project-icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-share-variant-outline"></i>
+              </div>
             </div>
             <div class="project">
               <h3>Ad Blocker</h3>
@@ -97,6 +119,11 @@
                 explicabo? Ex, consequuntur explicabo? Natus corporis rerum
                 nihil est fugit enim. At, laboriosam ratione. Corrupti!
               </p>
+                            <div class="project-icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-share-variant-outline"></i>
+              </div>
             </div>
             <div class="project">
               <h3>Money Maker</h3>
@@ -105,6 +132,11 @@
                 Molestias facere reprehenderit recusandae harum et sit
                 explicabo? 
               </p>
+                            <div class="project-icons">
+                <i class="mdi mdi-star-plus-outline"></i>
+                <i class="mdi mdi-eye-plus-outline"></i>
+                <i class="mdi mdi-share-variant-outline"></i>
+              </div>
             </div>
             </div>
           </section>
@@ -121,6 +153,7 @@
                   temporibus minima, quia vel saepe! Laboriosam eveniet rerum
                   in, accusantium minima ea placeat eius!
                 </p>
+                
                 <hr>
                 <h4>Community Share Day</h4>
                 <p>
@@ -141,7 +174,7 @@
             </section>
 
             <section class="trending-section">
-                            <h2 id="trending-heading">Trending</h2>
+              <h2 id="trending-heading">Trending</h2>
               <div class="trending">
 
                 <div class="trending-item">
