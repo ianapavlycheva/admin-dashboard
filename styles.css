@@ -50,6 +50,10 @@ input {
   font-size: 1.5rem;
 }
 
+.profile p {
+  font-weight: 600;
+}
+
 #header-top {
   display: flex;
   justify-content: space-between;
@@ -79,6 +83,14 @@ input {
   height: 60px;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.greeting-text p {
+  font-weight: 600;
+}
+
+#greeting-username {
+  font-size: 1.5rem;
 }
 
 button {
