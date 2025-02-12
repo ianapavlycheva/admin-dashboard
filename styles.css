@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .container {
@@ -40,9 +40,8 @@ body {
 
 .projects {
   display: grid;
-  grid-gap: 2rem;
+  gap: 1.5rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  /* grid-auto-rows: 375px; */
 }
 
 .project {
@@ -50,6 +49,16 @@ body {
   border-radius: 8px;
   padding: 3rem 2rem;
   border-left: 12px solid #e0ea26;
+}
+
+.project h3 {
+  margin: 0;
+}
+
+.project p {
+  color: #727272;
+  overflow: hidden;
+  margin-top: 0;
 }
 
 #announcements-heading {
