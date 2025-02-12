@@ -38,6 +38,7 @@ input {
 }
 .search-bar i {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .profile {
@@ -48,6 +49,7 @@ input {
 
 .profile i {
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .profile p {
@@ -100,6 +102,12 @@ button {
   border-radius: 20px;
   margin: 0 0 0 10px;
   font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1a4ea2;
+  transition: 0.3s;
 }
 
 .nav {
@@ -207,6 +215,7 @@ button {
 
 .project-icons i {
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 #announcements-heading {
@@ -224,6 +233,7 @@ button {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  word-break: break-word;
   margin-top: 0;
 }
 
@@ -283,4 +293,10 @@ button {
 .username,
 .project-name {
   margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
