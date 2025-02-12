@@ -32,10 +32,22 @@ input {
   width: 500px;
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+.search-bar i {
+  font-size: 1.5rem;
+}
+
 .profile {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+.profile i {
+  font-size: 1.5rem;
 }
 
 #header-top {
@@ -127,6 +139,11 @@ button {
 #nav-settings {
   margin-top: 50px;
 }
+
+.nav h1 i {
+  font-size: 3.5rem;
+}
+
 .main {
   grid-area: main;
   background-color: #a5b2b8;
@@ -153,8 +170,9 @@ button {
 .project {
   background-color: #f2f2f2;
   border-radius: 8px;
-  padding: 3rem 2rem;
   border-left: 12px solid #e0ea26;
+  position: relative;
+  padding: 2em 1em 2em 2em; /* Ensure padding is even */
 }
 
 .project h3 {
@@ -165,6 +183,18 @@ button {
   color: #727272;
   overflow: hidden;
   margin-top: 0;
+}
+
+.project-icons {
+  position: absolute;
+  right: 1em;
+  bottom: 1em;
+  display: flex;
+  gap: 10px;
+}
+
+.project-icons i {
+  font-size: 1.2rem;
 }
 
 #announcements-heading {
