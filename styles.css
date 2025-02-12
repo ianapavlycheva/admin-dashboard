@@ -18,8 +18,64 @@ body {
   background-color: #f2f2f2;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  padding: 0.5em 2em 1em 2em;
+}
+
+input {
+  background-color: #a5b2b8;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-size: 1rem;
+  width: 500px;
+}
+
+.profile {
+  display: flex;
   align-items: center;
-  padding: 0 1rem;
+  gap: 20px;
+}
+
+#header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+#header-bottom {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.greeting p {
+  margin: 0;
+}
+
+.greeting img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+button {
+  background-color: #2565c4;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  margin: 0 0 0 10px;
+  font-size: 1rem;
 }
 
 .nav {
@@ -78,15 +134,8 @@ body {
 }
 
 .profile img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.greeting img {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
