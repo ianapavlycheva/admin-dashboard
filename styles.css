@@ -9,6 +9,8 @@
   --border-radius: 8px;
   --padding-standard: 1rem;
   --padding-large: 2rem;
+  --text-light: #727272;
+  --text-bold: #111827;
 }
 
 body {
@@ -18,12 +20,28 @@ body {
   color: var(--text-color);
 }
 
+button {
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #d97706;
+  transform: scale(1.05);
+}
+
 .container {
   display: grid;
   grid-template-areas:
     "nav header"
     "nav main";
-  grid-template-rows: 150px 1fr;
+  grid-template-rows: auto 1fr;
   grid-template-columns: 300px 1fr;
   height: 100vh;
 }
@@ -112,22 +130,6 @@ input {
   font-size: 1.5rem;
 }
 
-button {
-  background-color: var(--accent-color);
-  color: white;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #d97706;
-  transform: scale(1.05);
-}
-
 .nav {
   background-color: var(--primary-color);
   grid-area: nav;
@@ -148,7 +150,6 @@ button:hover {
   padding-left: 0;
   font-size: 1.5rem;
   font-weight: 500;
-  color: #000;
   line-height: 2;
   margin-top: 40px;
 }
@@ -211,10 +212,11 @@ button:hover {
 
 .project h3 {
   margin: 0;
+  color: var(--text-bold);
 }
 
 .project p {
-  color: #727272;
+  color: var(--text-light);
   overflow: hidden;
   margin-top: 0;
 }
