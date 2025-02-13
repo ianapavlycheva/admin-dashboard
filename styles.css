@@ -1,6 +1,21 @@
+:root {
+  --primary-color: #2565c4;
+  --secondary-color: #a5b2b8;
+  --text-color: #333;
+  --background-color: #f2f2f2;
+  --accent-color: #e0ea26;
+  --hover-color: #1a4ea2;
+  --shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  --border-radius: 8px;
+  --padding-standard: 1rem;
+  --padding-large: 2rem;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .container {
@@ -15,19 +30,20 @@ body {
 
 .header {
   grid-area: header;
-  background-color: #f2f2f2;
+  background-color: var(--background-color);
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  padding: 0.5em 2em 1em 2em;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5em var(--padding-large) 1em var(--padding-large);
+  box-shadow: var(--shadow);
 }
 
 input {
-  background-color: #a5b2b8;
+  background-color: var(--secondary-color);
   padding: 6px 20px;
   border: none;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
   margin: 0 10px;
   font-size: 1rem;
   width: 500px;
@@ -61,13 +77,13 @@ input {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: var(--padding-standard);
 }
 
 #header-bottom {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: var(--padding-standard);
   justify-content: space-between;
 }
 
@@ -97,24 +113,24 @@ input {
 }
 
 button {
-  background-color: #2565c4;
-  padding: 8px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 20px;
-  margin: 0 0 0 10px;
-  font-size: 1rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #1a4ea2;
-  transition: 0.3s;
+  background-color: var(--hover-color);
 }
 
 .nav {
-  background-color: #2565c4;
+  background-color: var(--primary-color);
   grid-area: nav;
-  padding: 2rem;
+  padding: var(--padding-large);
 }
 
 .nav h1 {
@@ -123,11 +139,7 @@ button:hover {
   font-size: 2rem;
   gap: 10px;
   margin: 0;
-  padding-left: 0;
-}
-
-.nav ul i {
-  margin-right: 14px;
+  color: #fff;
 }
 
 .nav ul {
@@ -135,26 +147,25 @@ button:hover {
   padding-left: 0;
   font-size: 1.5rem;
   font-weight: 500;
-  color: #000000;
+  color: #000;
   line-height: 2;
   margin-top: 40px;
 }
 
+.nav ul i {
+  margin-right: 14px;
+}
+
 .nav a {
   text-decoration: none;
-  color: #000000;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
 
-.nav a:hover {
-  color: #0d3770;
-}
-
-.nav a:visited {
-  color: #000000;
-}
-
-.nav a:active {
-  color: #0000ff;
+.nav a:hover,
+.nav a:focus {
+  color: var(--accent-color);
 }
 
 #nav-settings {
@@ -167,8 +178,8 @@ button:hover {
 
 .main {
   grid-area: main;
-  background-color: #a5b2b8;
-  padding: 1rem;
+  background-color: var(--secondary-color);
+  padding: var(--padding-standard);
 }
 
 .profile img {
@@ -189,12 +200,12 @@ button:hover {
 }
 
 .project {
-  background-color: #f2f2f2;
-  border-radius: 8px;
-  border-left: 12px solid #e0ea26;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  border-left: 12px solid var(--accent-color);
   position: relative;
   padding: 2em 1em 2em 2em;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
 }
 
 .project h3 {
@@ -220,13 +231,24 @@ button:hover {
   cursor: pointer;
 }
 
-#announcements-heading {
+#announcements-heading,
+#trending-heading {
   font-weight: 600;
-  margin-left: 2rem;
+  margin-left: var(--padding-large);
 }
 
 .announcements {
   padding: 3rem 2rem;
+}
+
+.announcements,
+.trending {
+  padding: var(--padding-standard) var(--padding-large);
+  max-width: 350px;
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+  margin: 0 0 3rem var(--padding-large);
+  box-shadow: rgba(0, 0, 0, 0.2);
 }
 
 .announcements p {
@@ -242,30 +264,15 @@ button:hover {
 .announcements h4 {
   font-size: 1rem;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
   margin-bottom: 5px;
-}
-
-.announcements,
-.trending {
-  padding: 20px 30px;
-  max-width: 350px;
-  border-radius: 8px;
-  background-color: #f2f2f2;
-  margin: 0 0 3rem 2rem;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-#trending-heading {
-  font-weight: 600;
-  margin-left: 2rem;
 }
 
 .trending-item {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
+  gap: var(--padding-standard);
+  margin-bottom: var(--padding-standard);
 }
 
 .trending-item img {
@@ -278,13 +285,12 @@ button:hover {
 .trending-item .text {
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
 .username {
   font-size: 1rem;
   font-weight: bold;
-  color: #333;
+  color: var(--text-color);
 }
 
 .project-name {
